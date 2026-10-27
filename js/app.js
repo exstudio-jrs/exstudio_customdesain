@@ -48,12 +48,7 @@
     if (!window.supabase || !window.SUPABASE_URL || !window.SUPABASE_PUBLISHABLE_KEY ||
         window.SUPABASE_URL.includes("abjeeuvnnkcrldgibyss") ||
         window.SUPABASE_PUBLISHABLE_KEY.includes("sb_publishable_R6ICoqhEy8rSvFhDs6GDbg_j6QZjScV")) {
-      const msg = "Konfigurasi belum diisi. Edit js/supabase-config.js dengan Project URL dan Publishable key Supabase.";
-      const target = $("#loginMessage") || $(".main-content");
-      if (target) {
-        if (target.id === "loginMessage") setMessage(target, msg, true);
-        else target.insertAdjacentHTML("afterbegin", `<div class="notice"><strong>Konfigurasi Supabase belum diisi</strong><span>${escapeHtml(msg)}</span></div>`);
-      }
+      
       return false;
     }
     supabase = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_PUBLISHABLE_KEY, {
