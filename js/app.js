@@ -486,4 +486,4 @@
     else if (PAGE === "designer") designerPage();
     else if (PAGE === "gallery") galleryPage();
   });
-}();
+};
