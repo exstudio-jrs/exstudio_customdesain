@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desainer — Sportwear Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="designer">
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a class="brand-lockup" href="designer.html"><span class="brand-mark small">SS</span><span>SPORTWEAR<br><b>STUDIO</b></span></a>
+      <p class="nav-label">WORKSPACE</p>
+      <a class="nav-link active" href="designer.html">▦ <span>Tugas Saya</span></a>
+      <a class="nav-link" href="gallery.html">▧ <span>Gallery Approved</span></a>
+      <div class="sidebar-bottom"><div class="avatar">D</div><div><b id="sidebarName">Desainer</b><small id="sidebarRole">Desainer</small></div><button class="icon-btn" data-logout title="Keluar">↗</button></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div><p class="eyebrow">WORKSPACE / DESIGNER</p><h1>Tugas saya</h1><p class="muted">Buka brief, unggah desain awal, dan kirim hasil revisi.</p></div><a class="btn btn-quiet" href="gallery.html">Lihat Gallery ↗</a></header>
+      <section class="notice"><strong>Alur kerja</strong><span>Upload hasil di sini. Marketing akan memeriksa hasil, meminta revisi jika perlu, atau menyetujui desain final.</span></section>
+      <section class="panel">
+        <div class="panel-heading panel-heading-wrap"><div><p class="eyebrow">ASSIGNED TASKS</p><h2>Daftar tugas</h2></div><button id="refreshDesigner" class="btn btn-quiet" type="button">↻ Refresh</button></div>
+        <div id="designerTasks" class="design-list"><div class="empty-state">Memuat tugas...</div></div>
+      </section>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

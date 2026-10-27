@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery — Sportwear Studio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a class="brand-lockup" href="index.html"><span class="brand-mark small">SS</span><span>SPORTWEAR<br><b>STUDIO</b></span></a>
+      <p class="nav-label">EXPLORE</p>
+      <a class="nav-link active" href="gallery.html">▧ <span>Gallery Approved</span></a>
+      <a class="nav-link" href="index.html">⌂ <span>Login / Workspace</span></a>
+      <div class="sidebar-bottom"><div class="avatar">G</div><div><b>Public Gallery</b><small>Approved designs</small></div></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div><p class="eyebrow">SPORTWEAR PORTFOLIO</p><h1>Gallery desain</h1><p class="muted">Koleksi desain yang sudah disetujui Marketing.</p></div><a class="btn btn-primary" href="index.html">Masuk workspace ↗</a></header>
+      <section class="gallery-intro"><div><p class="eyebrow">FINAL COLLECTION</p><h2>Approved designs only.</h2><p>Hanya desain berstatus approved yang ditampilkan di halaman ini.</p></div><div class="gallery-count"><strong id="galleryCount">—</strong><span>desain approved</span></div></section>
+      <section id="galleryGrid" class="gallery-grid"><div class="empty-state">Memuat gallery...</div></section>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

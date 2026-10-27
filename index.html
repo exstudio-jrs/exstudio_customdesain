@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sportwear Studio — Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <section class="login-brand">
+      <div class="brand-mark">SS</div>
+      <p class="eyebrow">SPORTWEAR WORKSPACE</p>
+      <h1>Custom Jersey<br><span>Design Studio</span></h1>
+      <p class="muted-light">Satu ruang kerja untuk Marketing dan Desainer. Brief, revisi, dan approval tersimpan bersama.</p>
+      <div class="login-pill-row"><span>Brief desain</span><span>Revisi</span><span>Approval</span></div>
+    </section>
+    <section class="login-card">
+      <p class="eyebrow">SELAMAT DATANG</p>
+      <h2>Masuk ke workspace</h2>
+      <p class="muted">Gunakan akun yang sudah dibuat di Supabase Authentication.</p>
+      <form id="loginForm" class="stack">
+        <label>Email<input id="email" type="email" autocomplete="username" required placeholder="nama@perusahaan.com"></label>
+        <label>Password<input id="password" type="password" autocomplete="current-password" required placeholder="Masukkan password"></label>
+        <button class="btn btn-primary" type="submit">Masuk <span aria-hidden="true">→</span></button>
+        <p id="loginMessage" class="message" role="status"></p>
+      </form>
+      <div class="login-foot">Akses diberikan berdasarkan role pada tabel <code>profiles</code>.</div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabase-config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
